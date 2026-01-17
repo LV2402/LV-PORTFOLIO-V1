@@ -1,73 +1,100 @@
-# Welcome to your Lovable project
+# Vamshi Lagishetty – Developer Portfolio
 
-## Project info
+This repository contains the source code for my personal developer portfolio.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The portfolio represents my work as a **Full Stack Developer**, focused on building clean, scalable, and real-world web applications rather than demos or templates.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🌐 Live Website
 
-**Use Lovable**
+👉 https://vamshi-lagishetty.vercel.app  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 About This Project
 
-**Use your preferred IDE**
+This portfolio is intentionally designed to be:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Minimal and fast
+- Focused on real projects and clear explanations
+- Easy to maintain and extend over time
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+It highlights:
+- Selected projects with meaningful descriptions
+- Technologies I actively use and understand
+- Contact and social links for collaboration and opportunities
 
-Follow these steps:
+No unnecessary animations. No filler sections. Just substance.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🛠 Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+This project is built using modern frontend tooling:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- **React** with **TypeScript**
+- **Vite** for fast development and optimized builds
+- **Tailwind CSS** for styling
+- **shadcn/ui** for reusable UI components
+
+---
+
+## 🚀 Getting Started (Run Locally)
+
+Follow these steps to run the project on your local machine.
+
+### Prerequisites
+
+- Node.js (v18 or later recommended)
+- npm
+
+### Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/LV2402/LV-PORTFOLIO-V1.git
+
+# Navigate to the project directory
+cd LV-PORTFOLIO-V1
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
+````
+
+The application will be available at:
+
+```
+http://localhost:5173
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Build for Production
 
-**Use GitHub Codespaces**
+To create an optimized production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 📬 Contact & Links
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+If you’d like to collaborate, discuss opportunities, or connect:
 
-## How can I deploy this project?
+* **Portfolio**: [https://lv-portfolio-v1.vercel.app](https://lv-portfolio-v1.vercel.app)
+* **GitHub**: [https://github.com/LV2402](https://github.com/LV2402)
+* **LinkedIn**: [https://www.linkedin.com/in/vamshilagishetty](https://www.linkedin.com/in/vamshilagishetty)
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 📄 License
 
-Yes, you can!
+This project is open-source and available under the **MIT License**.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```
