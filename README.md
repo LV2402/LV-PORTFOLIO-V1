@@ -87,14 +87,7 @@ npm run build
 
 If you’d like to collaborate, discuss opportunities, or connect:
 
-* **Portfolio**: [https://lv-portfolio-v1.vercel.app](https://lv-portfolio-v1.vercel.app)
+* **Portfolio**: [https://lv-portfolio-v1.vercel.app](https://vamshi-lagishetty.vercel.app)
 * **GitHub**: [https://github.com/LV2402](https://github.com/LV2402)
 * **LinkedIn**: [https://www.linkedin.com/in/vamshilagishetty](https://www.linkedin.com/in/vamshilagishetty)
 
----
-
-## 📄 License
-
-This project is open-source and available under the **MIT License**.
-
-```
