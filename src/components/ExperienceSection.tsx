@@ -3,21 +3,21 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Briefcase, Calendar, Code } from "lucide-react";
 
 const experiences = [
-  {
-    role: "Technical Lead",
-    company: "VISWAM.AI",
-    subtitle: "IIIT Hyderabad & Swecha Collaboration",
-    period: "May 2025 – July 2025",
-    techStack: ["Python", "Data Engineering", "AI/ML Pipelines", "Open-Source Systems"],
-    description: "A national AI initiative launched by IIIT Hyderabad and Swecha, supported by Meta, focused on building AI solutions for the Global South.",
-    highlights: [
-      "Led and mentored interns working on AI-driven systems",
-      "Solved technical blockers across datasets, pipelines, and tools",
-      "Reviewed code and guided correct implementation",
-      "Coordinated technical execution for program delivery",
-      "Contributed to open-source outputs on Swecha's platform"
-    ]
-  },
+  // {
+  //   role: "Technical Lead",
+  //   company: "VISWAM.AI",
+  //   subtitle: "IIIT Hyderabad & Swecha Collaboration",
+  //   period: "May 2025 – July 2025",
+  //   techStack: ["Python", "Data Engineering", "AI/ML Pipelines", "Open-Source Systems"],
+  //   description: "A national AI initiative launched by IIIT Hyderabad and Swecha, supported by Meta, focused on building AI solutions for the Global South.",
+  //   highlights: [
+  //     "Led and mentored interns working on AI-driven systems",
+  //     "Solved technical blockers across datasets, pipelines, and tools",
+  //     "Reviewed code and guided correct implementation",
+  //     "Coordinated technical execution for program delivery",
+  //     "Contributed to open-source outputs on Swecha's platform"
+  //   ]
+  // },
   {
     role: "Full-Stack Developer Intern",
     company: "Opportive",
@@ -31,21 +31,21 @@ const experiences = [
       "Integrated MongoDB for data storage",
       "Worked in short sprints with production deadlines"
     ]
-  },
-  {
-    role: "Full-Stack Developer Intern",
-    company: "Tutly.in",
-    subtitle: "Longest-running role",
-    period: "May 2024 – Present",
-    techStack: ["React", "Node.js", "PostgreSQL", "Prisma", "Redis", "JWT", "GitHub Actions"],
-    description: "Consistent contributions to a production platform with real users.",
-    highlights: [
-      "Built production React dashboards",
-      "Developed Node.js APIs with Prisma & PostgreSQL",
-      "Implemented authentication, protected routes, and caching",
-      "Worked with CI/CD, sprint cycles, and code reviews"
-    ]
   }
+  // {
+  //   role: "Full-Stack Developer Intern",
+  //   company: "Tutly.in",
+  //   subtitle: "Longest-running role",
+  //   period: "May 2024 – Present",
+  //   techStack: ["React", "Node.js", "PostgreSQL", "Prisma", "Redis", "JWT", "GitHub Actions"],
+  //   description: "Consistent contributions to a production platform with real users.",
+  //   highlights: [
+  //     "Built production React dashboards",
+  //     "Developed Node.js APIs with Prisma & PostgreSQL",
+  //     "Implemented authentication, protected routes, and caching",
+  //     "Worked with CI/CD, sprint cycles, and code reviews"
+  //   ]
+  // }
 ];
 
 const ExperienceSection = () => {
