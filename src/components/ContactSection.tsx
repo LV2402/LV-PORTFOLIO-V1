@@ -8,7 +8,7 @@ const ContactSection = () => {
   const contactLinks = [
     {
       label: "Resume",
-      href: "https://drive.google.com/file/d/1KtNSd61lur8KTOu85dptK3FB9tlRmqML/view?usp=sharing",
+      href: "https://drive.google.com/file/d/1vbOP2V3rdqQAa0OlFVGniiUzZWBzw5o6/view?usp=sharing",
       icon: FileText,
     },
     {
