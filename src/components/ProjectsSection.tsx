@@ -1,105 +1,123 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { ExternalLink, Github, ChevronRight, Lightbulb, Wrench, Zap, X } from "lucide-react";
+import { ExternalLink, Github, ChevronRight, Lightbulb, Wrench, Zap } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const projects = [
+  {
+    title: "Interview Trainer",
+    subtitle: "AI Mock Interview & Feedback Platform",
+    live: "https://interviewtrainer-one.vercel.app",
+    github: "https://github.com/vnr-ibt-july-2025/interviewtrainer/tree/main/web-cloud",
+    techStack: ["React", "Node.js", "Express", "MongoDB", "Supabase", "JWT", "OAuth"],
+    problem: "Job seekers lack realistic interview practice and structured feedback based on their resume and performance.",
+    solution: "A full-stack platform that simulates interview scenarios, generates questions from resumes, and provides automated feedback using AI.",
+    flow: "User uploads resume → AI generates questions → User responds → Backend processes responses → AI evaluates → Feedback and analytics displayed",
+    highlights: [
+      "Built full-stack application with React and Express",
+      "Integrated AI services for question generation and feedback",
+      "Developed 30+ REST APIs with authentication and session handling",
+      "Handled speech-to-text transcription and response processing",
+      "Designed backend for interview sessions and analytics"
+    ],
+    badge: "🚀 AI System"
+  },
+  {
+    title: "Vendora",
+    subtitle: "Product Inventory Management Platform",
+    live: "https://vendora-rose.vercel.app",
+    github: "https://github.com/LV2402/Vendora",
+    techStack: ["React", "Node.js", "Express", "MongoDB"],
+    problem: "Small vendors track inventory manually, leading to errors, poor visibility, and inefficient management.",
+    solution: "A full-stack system for managing products, stock status, and updates from a centralized dashboard.",
+    flow: "Frontend → API → Backend → MongoDB → Inventory updates → UI reflects changes",
+    highlights: [
+      "Designed MongoDB schemas for product data",
+      "Built REST APIs for CRUD operations",
+      "Implemented seller-specific data isolation",
+      "Connected frontend with backend for real-time updates"
+    ],
+    badge: "💼 Business Workflow"
+  },
   {
     title: "VJSV Club Website",
     subtitle: "Official Literary Club Platform",
     live: "https://www.vjsahithivanam.in",
     github: "https://github.com/LV2402/VJSV",
     techStack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    problem: "The college literary club had no centralized digital presence. Events, poems, and announcements were scattered across WhatsApp groups and posters.",
-    solution: "A modern, animated, production-grade web platform that serves as the official online home for the VJSV Sahithi Vanam club.",
-    flow: "Users visit the site → Browse literary content & events → Smooth animated navigation → Club maintains its public identity online.",
+    problem: "The club had no centralized digital presence for events, writings, and announcements.",
+    solution: "A responsive and animated web platform serving as the official online presence for the club.",
+    flow: "User visits → Browses events and content → Smooth navigation → Centralized digital presence",
     highlights: [
-      "Built the entire frontend using React + TypeScript",
-      "Designed responsive UI using Tailwind",
-      "Implemented smooth page transitions using Framer Motion",
-      "Deployed and maintained a real public website"
+      "Built frontend using React and TypeScript",
+      "Designed responsive UI using Tailwind CSS",
+      "Implemented animations using Framer Motion",
+      "Deployed and maintained live website"
     ],
     badge: "🏆 Real Organization"
   },
   {
-    title: "Vendora",
-    subtitle: "Centralized Product Inventory Platform",
-    live: "https://vendora-rose.vercel.app",
-    github: "https://github.com/LV2402/Vendora",
-    techStack: ["React", "Node.js", "Express", "MongoDB"],
-    problem: "Small vendors track stock using notebooks or Excel, causing lost products, overselling, and zero visibility.",
-    solution: "A full-stack SaaS-style inventory system that allows vendors to manage products, quantities, and updates from one dashboard.",
-    flow: "Frontend → API → Backend → MongoDB → Inventory updates → Real-time UI reflection",
-    highlights: [
-      "Designed product schemas in MongoDB",
-      "Built REST APIs for inventory operations",
-      "Connected frontend with backend for live updates",
-      "Deployed a working business-style platform"
-    ],
-    badge: "💼 Business Workflow"
-  },
-  {
     title: "Streamify",
-    subtitle: "Real-Time Chat & Language Learning",
+    subtitle: "Real-Time Chat and Communication Platform",
     github: "https://github.com/LV2402/Streamify",
-    techStack: ["MERN Stack", "Stream SDK", "JWT"],
-    problem: "Language learners don't get live conversation, feedback, and community in one place.",
-    solution: "A real-time communication platform where users can chat and make video calls to practice new languages.",
-    flow: "User signs up → Backend creates identity → Stream SDK connects → Chat & video sessions in real time",
+    techStack: ["MongoDB", "Express", "React", "Node.js", "JWT", "Stream SDK"],
+    problem: "Language learners lack real-time interaction and feedback systems.",
+    solution: "A platform enabling users to chat and make video calls for real-time communication.",
+    flow: "User signs up → Backend creates identity → Stream connects users → Real-time chat and calls",
     highlights: [
-      "Built user authentication & JWT system",
-      "Synced app users with Stream users",
-      "Generated and validated Stream tokens",
-      "Managed real-time chat & call integration"
+      "Implemented authentication using JWT",
+      "Integrated Stream SDK for real-time communication",
+      "Managed token generation and validation",
+      "Handled user synchronization with external services"
     ],
-    badge: "🔴 Real-Time Infrastructure"
+    badge: "🔴 Real-Time"
   },
   {
     title: "SalesLens",
     subtitle: "Sales Data Analytics System",
     github: "https://github.com/LV2402/SalesLens",
     techStack: ["Python", "Pandas", "Matplotlib", "Seaborn"],
-    problem: "Raw sales data is useless unless it's cleaned, processed, and visualized.",
-    solution: "A data analysis pipeline that converts raw sales CSVs into meaningful business insights.",
-    flow: "CSV → Pandas → Data cleaning → Analysis → Graphs → Insights",
+    problem: "Raw sales data lacks insights without proper processing and analysis.",
+    solution: "A data processing pipeline that converts CSV data into actionable insights.",
+    flow: "CSV → Pandas → Cleaning → Analysis → Visualization → Insights",
     highlights: [
-      "Handled missing & corrupt data",
-      "Generated sales trends and performance metrics",
-      "Created visual dashboards using Matplotlib & Seaborn"
+      "Handled missing and inconsistent data",
+      "Performed trend and category analysis",
+      "Generated visualizations using Matplotlib and Seaborn"
     ],
-    badge: "📊 Data Engineering"
+    badge: "📊 Data"
   },
   {
     title: "Zego",
     subtitle: "Real-Time Collaborative Whiteboard",
     github: "https://github.com/LV2402/Zego",
     techStack: ["React", "ZEGOCLOUD"],
-    problem: "Remote teams need instant visual collaboration, not just text.",
-    solution: "A multi-user live whiteboard where users can draw and interact in real time.",
-    flow: "One user draws → ZEGOCLOUD realtime channels → All connected users see updates instantly",
+    problem: "Remote collaboration lacks real-time visual interaction tools.",
+    solution: "A live whiteboard where users can draw and collaborate simultaneously.",
+    flow: "User draws → Real-time sync → All users see updates instantly",
     highlights: [
       "Integrated real-time SDK",
       "Synced user actions across clients",
-      "Built low-latency collaboration logic"
+      "Built low latency interaction system"
     ],
-    badge: "⚡ Event-Driven"
+    badge: "⚡ Event Driven"
   },
   {
     title: "YouTube To-Do",
-    subtitle: "Content Production Planner",
+    subtitle: "Content Planning Tool",
     live: "https://youtube-to-do.vercel.app",
     github: "https://github.com/LV2402/YOUTUBE-TO-DO",
     techStack: ["React"],
-    problem: "Creators lose track of ideas, video stages, and publishing schedules.",
-    solution: "A clean workflow tool that helps YouTubers manage videos from idea → production → upload.",
-    flow: "User creates tasks → Organizes by stage → Tracks progress → Maintains content flow",
+    problem: "Creators struggle to manage content ideas and production stages.",
+    solution: "A task-based tool to manage video workflows from idea to publishing.",
+    flow: "User creates tasks → Organizes workflow → Tracks progress → Completes content cycle",
     highlights: [
-      "Built task-based UI",
-      "Designed a workflow-focused UX",
-      "Implemented state management for creator pipelines"
+      "Built task management UI",
+      "Designed workflow-focused experience",
+      "Managed application state for content tracking"
     ],
-    badge: "🎬 Niche Product"
+    badge: "🎬 Product"
   }
 ];
 
